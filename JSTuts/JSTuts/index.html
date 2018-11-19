@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Github Hub</title>
+    <script type="module" src="src/scripts/index.js">
+    </script>
+</head>
+<body>
+    <header>
+        <div><img src="img/logo.gif" /></div>
+        <p>This is a  simple site to search <a href="http://github.com">>Github</a> for interesting projects.</p>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <p>In this <em>sample site</em> i  we'll show a ´list of GitHub projects <span>and the data</span><strong>about those projects.</strong></p>
+        <form action="http://wilder.azurewebsites.net/echo">
+            <label for="searchPhrase">Search Phrase:</label>
+            <input name="searchPhrase" id="searchPhrase" /><br />
+            <label for="useStars">Use Stars?</label>
+            <input type="checkbox" name="useStars" id="useStars" checked="true" />
+            <br />
+            <label for="langChoice">Language:</label>
+            <select name="langChoice">
+                <option>All</option>
+                <option>JavaScript</option>
+                <option selected>C#</option>
+                <option>Java</option>
+                <option>Ruby</option>
+            </select>
+            <br />
+            <input type="submit" value="search" />
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2018  5DaysCode
+    </footer>
+</body>
+</html>
