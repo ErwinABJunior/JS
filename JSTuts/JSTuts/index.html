@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Github Hub</title>
+    <link href="src/styles/Site.css" rel="stylesheet" />
+    <!--<link href="Content/Site.css" rel="stylesheet" />-->
     <script type="module" src="src/scripts/index.js">
     </script>
+
+
+
 </head>
 <body>
     <header>
@@ -19,11 +24,11 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section id="main">
         <p>In this <em>sample site</em> i  we'll show a ´list of GitHub projects <span>and the data</span><strong>about those projects.</strong></p>
         <form action="http://wilder.azurewebsites.net/echo">
             <label for="searchPhrase">Search Phrase:</label>
-            <input name="searchPhrase" id="searchPhrase" /><br />
+            <input type="text" name="searchPhrase" id="searchPhrase" /><br />
             <label for="useStars">Use Stars?</label>
             <input type="checkbox" name="useStars" id="useStars" checked="true" />
             <br />
@@ -36,7 +41,7 @@
                 <option>Ruby</option>
             </select>
             <br />
-            <input type="submit" value="search" />
+            <input id="submitbutton" type="submit" value="search" />
         </form>
     </section>
 

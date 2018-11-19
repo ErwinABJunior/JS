@@ -1,0 +1,74 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+/*separated button same rooles*/
+header, footer {
+    background-color: lightgray;
+    border: solid 1px black;
+    font-family: 'Times New Roman', serif;
+}
+
+footer {
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#main {
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    color: #202020;
+    margin: 20px 0px;
+    padding: 5px;
+}
+
+    /*relative selectors*/
+    /*#main > form > label {
+        font-weight: bold;
+    }*/
+
+    /*label witch livs input main*/
+    #main label {
+        font-weight: bold;
+    }
+
+    /*multiple selectors with one roole*/
+    #main input [type=text],
+    #main select {
+        width: 150px;
+    }
+
+/*This doesnt work becouse off  user agent style you need a class see  below  "submitbutton"*/
+/*#main input [type=submit] {
+        background-color: green;
+        color: white;
+        border-radius: 15px;
+        padding: 3px;
+        margin-top: 5px;
+    }*/
+
+#submitbutton {
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+    padding: 3px;
+    margin-top: 5px;
+}

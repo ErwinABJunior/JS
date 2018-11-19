@@ -161,7 +161,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="src\styles\Site.css" />
     <Content Include="img\logo.gif" />
     <Content Include="index.html" />
     <Content Include="Scripts\bootstrap.js" />
@@ -182,7 +182,6 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="src\scripts\index.js" />
     <Content Include="src\scripts\test.html" />
-    <Content Include="src\styles\StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -197,7 +196,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="src\styles\index.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
