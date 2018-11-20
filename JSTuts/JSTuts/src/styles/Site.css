@@ -3,24 +3,40 @@
     padding-bottom: 20px;
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     font-size: 14px;
+    background-color: darkgreen;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+/*reset body and html against a edges*/
+/*Often is  starting point of your CSS */
+html, body {
+    padding: 0px;
+    margin: 0px;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
 
-/*separated button same rooles*/
+.container {
+    /*This width works commonly on all modern sizes */
+    width: 989px;
+    /*Centering container on Browser*/
+    margin: 0 auto;
+    background-color: white;
+    padding: 5px;
+}
+
+
+header nav {
+    float: right;
+    margin-right: 5px;
+}
+
+    /*Stack link´s  next touchadar horizontali */
+    header nav li {
+        display: inline;
+        font-size: 12px;
+    }
+
 header, footer {
     background-color: lightgray;
     border: solid 1px black;
@@ -32,6 +48,12 @@ footer {
     border-radius: 3px;
 }
 
+
+.bordered-Image {
+    border: solid 1px #444;
+    border-radius: 2px;
+}
+
 #main {
     border: solid 1px #ccc;
     border-radius: 5px;
@@ -40,19 +62,38 @@ footer {
     padding: 5px;
 }
 
-    /*relative selectors*/
-    /*#main > form > label {
+/*positional selectors*/
+/*#main > form > label {
         font-weight: bold;
     }*/
 
+
+
+/*Aligning  and  positioning 2 elements near together */
+#results {
+    padding: 2px;
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.simple-form {
+    padding: 2px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+    /*---------------------------------------------------------*/
+
     /*label witch livs input main*/
-    #main label {
+    .simple-form label {
         font-weight: bold;
     }
 
     /*multiple selectors with one roole*/
-    #main input [type=text],
-    #main select {
+    .simple-form input [type=text],
+    .simple-form select {
         width: 150px;
     }
 
