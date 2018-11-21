@@ -37,6 +37,16 @@ header nav {
         font-size: 12px;
     }
 
+
+.result {
+    margin: 5px;
+    border: 1px solid #808080
+}
+
+    .result .title {
+        font-weight: bold;
+    }
+
 header, footer {
     background-color: lightgray;
     border: solid 1px black;

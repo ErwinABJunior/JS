@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Github Hub</title>
     <link href="src/styles/Site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -22,14 +24,14 @@
         </header>
         <section id="main">
             <p>In this <em>sample site</em> i  we'll show a ´list of GitHub projects <span>and the data</span><strong>about those projects.</strong></p>
-            <form action="http://wilder.azurewebsites.net/echo" method="post" class="bordered-Image simple-form">
+            <form action="http://wilder.azurewebsites.net/echo" method="post" class="bordered-Image simple-form" id="githubSearchForm">
                 <label for="searchPhrase">Search Phrase:</label>
                 <input type="text" name="searchPhrase" id="searchPhrase" /><br />
                 <label for="useStars">Use Stars?</label>
                 <input type="checkbox" name="useStars" id="useStars" checked="true" />
                 <br />
                 <label for="langChoice">Language:</label>
-                <select name="langChoice">
+                <select name="langChoice" id="langChoice">
                     <option>All</option>
                     <option>JavaScript</option>
                     <option selected>C#</option>
@@ -40,7 +42,11 @@
                 <input id="submitbutton" type="submit" value="search" />
             </form>
             <div id="results" class="bordered-Image">
+                <button id="toggleButton">Hide</button>
+                <div id="resultList">
+                    <p>Hej</p>
 
+                </div>
             </div>
         </section>
 
@@ -48,6 +54,9 @@
             &copy; 2018  5DaysCode / Shawn Wildermuth LLC
         </footer>
     </div>
+
+
     <script src="src/scripts/index.js"></script>
+
 </body>
 </html>
